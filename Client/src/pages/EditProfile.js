@@ -97,7 +97,7 @@ export default function EditProfile() {
                                     </Box>
                                 </div>
                                 <div class="mb-3 text-left">
-                                    <label class="bio-heading" for="inputUsername">Bio:</label>
+                                    <label class="bio-heading" for="inputUsername">Achievements:</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tell us about yourself." value={inputs.bio} name='bio' onChange={handleChange}></textarea>
                                 </div>
                             </div>
