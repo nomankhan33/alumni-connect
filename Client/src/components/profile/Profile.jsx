@@ -30,7 +30,7 @@ const Profile = () => {
                 <h1 className="profile-name">{currentUser.name}</h1>
                 
                 <div className="profile-bio">
-                    <span className="bio-label">Bio:</span>
+                    <span className="bio-label">Achievements:</span>
                     <p className="bio-text">
                         {error ? "Something went wrong!" : (isLoading ? "Loading..." : userData.bio)}
                     </p>
