@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ section .containerOTP .user .formBx .digit-group input[type ='text'] {
+    max-width: 40px;
+    height: 50px;
+    /* background-color: lighten($BaseBG, 5%); */
+    border: none;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: black;
+    margin: 0 2px;
+}
+section .containerOTP .user .formBx form input[type='submit'] {
+    min-width: 120px;
+    background: #5469e0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+section .containerOTP .user .formBx .digit-group .splitter {
+		padding: 0 5px;
+		color: black;
+		font-size: 24px;
+	}
+
+#section {
+  position: relative;
+  min-height: 100vh;
+  /* background-color: #f8dd30; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+section .containerOTPOTP {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+section .containerOTP .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+section .containerOTP .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #ff0;
+  transition: 0.5s;
+}
+
+section .containerOTP .user .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .containerOTP .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+}
+
+section .containerOTP .user .formBx form h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+section .containerOTP .user .formBx form input {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 8px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+
+
+section .containerOTP .otpBx .formBx {
+  left: 0%;
+}
+
+
+section .containerOTP .otpBx .imgBx {
+  left: 0%;
+}
+
+@media (max-width: 991px) {
+  section .containerOTP {
+    max-width: 400px;
+  }
+
+  section .containerOTP .imgBx {
+    display: none;
+  }
+
+  section .containerOTP .user .formBx {
+    width: 100%;
+  }
+
+}
+
+.otpSubmitButton {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5em 0;
+}
+
+.deactivated {
+  display: none;
+}
+.activated {
+  display: block;
+}
+
+@media (max-width: 450px) {
+    .otpSubmitButton {
+      display: flex ;
+      flex-direction: column;
+      align-items: center;
+    }
+}    
+
+/* * {
+  border: 1px solid red;
+} */

@@ -1,0 +1,253 @@
+.events-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex: 1;
+  }
+  
+  .events-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  @media (min-width: 768px) {
+    .events-header {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  
+  .page-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .page-subtitle {
+    color: #666;
+    margin-top: 8px;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .filter-btn {
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-btn.active {
+    background-color: #42275a;
+    color: white;
+    border-color: #42275a;
+  }
+  
+  .calendar-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #42275a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .calendar-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .event-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .event-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (min-width: 768px) {
+    .event-card {
+      flex-direction: row;
+    }
+  }
+  
+  .event-date {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-width: 100px;
+  }
+  
+  .event-date.in-person {
+    background-color: #42275a;
+  }
+  
+  .event-date.virtual {
+    background-color: #734b6d;
+  }
+  
+  .date-day {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .date-month {
+    font-size: 16px;
+  }
+  
+  .date-year {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  .event-details {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .event-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+  
+  .event-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .event-badge.in-person {
+    background-color: #f0e6f4;
+    color: #42275a;
+  }
+  
+  .event-badge.virtual {
+    background-color: #f4e6ef;
+    color: #734b6d;
+  }
+  
+  .event-info {
+    margin-bottom: 16px;
+    color: #666;
+  }
+  
+  .event-info p {
+    margin: 4px 0;
+  }
+  
+  .event-description {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .event-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .register-btn {
+    padding: 10px 20px;
+    background-color: #42275a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .details-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #42275a;
+    border: 1px solid #42275a;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .host-event-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .host-event-section h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .host-event-section p {
+    color: #555;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  .proposal-btn {
+    padding: 12px 24px;
+    background-color: #42275a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+  }

@@ -1,0 +1,193 @@
+.alumni-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #f8fbff;
+  }
+  
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .header-section h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(95, 177, 204);
+    margin: 0;
+  }
+  
+  .header-section p {
+    color: #5f6368;
+    margin-top: 0.5rem;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid rgb(73, 160, 189);
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .alumni-card {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e1eaff;
+    box-shadow: 0 2px 8px rgba(26, 115, 232, 0.05);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .alumni-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(26, 115, 232, 0.15);
+  }
+  
+  .alumni-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  
+  .alumni-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #1a73e8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .alumni-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem 0;
+    color: #333;
+  }
+  
+  .alumni-title {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 0.2rem 0;
+  }
+  
+  .alumni-company {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 0.8rem 0;
+  }
+  
+  .alumni-year, .alumni-branch, .alumni-location {
+    font-size: 0.85rem;
+    color: #777;
+    margin: 0 0 0.3rem 0;
+  }
+  
+  .connect-btn {
+    background-color: rgb(104, 187, 214);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .connect-btn:hover {
+    background-color: #1a73e8;
+  }
+  
+  .no-results {
+    background-color: white;
+    border: 1px solid #e1eaff;
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(26, 115, 232, 0.05);
+  }
+  
+  .no-results h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 0.8rem 0;
+  }
+  
+  .no-results p {
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .header-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .search-filter {
+      width: 100%;
+    }
+    
+    .search-box {
+      flex-grow: 1;
+    }
+    
+    .filters-grid {
+      grid-template-columns: 1fr;
+    }
+  }

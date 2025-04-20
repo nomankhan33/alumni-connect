@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+
+/* Base navbar styles */
+.navbar {
+  background-color: #fff;
+  color: #163f80;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: relative;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+}
+
+/* Left section styles */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo_image {
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 60px;
+  height: auto;
+}
+
+.nav-heading {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-weight: 600;
+  color: #163f80;
+}
+
+/* Desktop navigation */
+.desktop-nav {
+  display: none;
+  margin-left: 2rem;
+}
+
+.nav-link {
+  margin: 0 0.75rem;
+  padding: 0.5rem 0;
+  color: rgb(95, 177, 204);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid rgb(95, 177, 204);
+}
+
+.active-link {
+  border-bottom: 2px solid rgb(95, 177, 204);
+  font-weight: 600;
+}
+
+/* Right section styles */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile_icon {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: lightblue;
+  border-radius: 30%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: #163f80;
+  border: none;
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  border-radius: 30%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #163f80;
+}
+
+.logout_btn:hover, .profile_icon:hover {
+  background-color: #b3e0ff;
+}
+
+/* Icon button styles */
+.icon-button {
+  background: none;
+  border: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  color: #163f80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.icon-button:hover {
+  background-color: rgba(22, 63, 128, 0.1);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Mobile menu button */
+.mobile-menu-button {
+  display: block;
+  margin-left: 1rem;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #e5e7eb;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.mobile-nav-link {
+  padding: 0.75rem 1.5rem;
+  color: rgb(95, 177, 204);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.mobile-nav-link:hover {
+  background-color: rgba(95, 177, 204, 0.05);
+  border-left: 3px solid rgb(95, 177, 204);
+}
+
+.active-mobile-link {
+  border-left: 3px solid rgb(95, 177, 204);
+  background-color: rgba(95, 177, 204, 0.05);
+  font-weight: 600;
+}
+
+.mobile-profile {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.mobile-user-info {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-user-name {
+  font-weight: 600;
+  color: #163f80;
+  font-family: "Poppins", sans-serif;
+}
+
+.mobile-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-action-button {
+  padding: 0.75rem 0;
+  color: #163f80;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.mobile-action-button:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+  }
+  
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-heading {
+    font-size: 16px;
+  }
+  
+  .logo_image {
+    width: 50px;
+  }
+  
+  .profile_icon, .logout_btn {
+    min-width: 36px;
+    min-height: 36px;
+    padding: 8px;
+  }
+  
+  .logout_btn {
+    font-size: 0;
+    position: relative;
+  }
+  
+  .logout_btn::after {
+    content: "↩";
+    font-size: 16px;
+    position: absolute;
+  }
+}
