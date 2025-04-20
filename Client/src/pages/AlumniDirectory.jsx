@@ -96,26 +96,6 @@ const AlumniDirectory = () => {
             <h1>Alumni Directory</h1>
             <p>Connect with alumni from around the world</p>
           </div>
-          <div className="flex gap-2">
-          <div className="w-full md:w-auto">
-            <Input
-              placeholder="Search by name, title, or company"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              icon={<Search className="h-4 w-4" />}
-              className="min-w-[280px]"
-            />
-          </div>
-
-          <Button
-            variant="outline"
-            icon={<Filter className="h-4 w-4" />}
-            onClick={() => setShowFilters(!showFilters)}
-          >
-            Filter
-          </Button>
-        </div>
-      </div>
         </div>
 
         {showFilters && (
